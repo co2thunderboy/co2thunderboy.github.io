@@ -281,6 +281,22 @@ p {
   top: -7px;
 }
 
+.navbar-toggler.green .toggler-icon:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 7px;
+}
+
+.navbar-toggler.green .toggler-icon:nth-of-type(2) {
+  opacity: 0;
+}
+
+.navbar-toggler.green .toggler-icon:nth-of-type(3) {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  top: -7px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-collapse {
     position: absolute;
@@ -343,6 +359,11 @@ p {
 }
 
 .navbar-nav .nav-item > a:hover, .navbar-nav .nav-item > a.active {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.navbar-nav .nav-item > a:hover, .navbar-nav .nav-item > a.green {
   color: var(--white);
   opacity: 0.5;
 }
@@ -482,6 +503,11 @@ p {
 }
 
 .sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.sticky .navbar-nav .nav-item a.green, .sticky .navbar-nav .nav-item a:hover {
   color: var(--primary-color);
   opacity: 1;
 }
