@@ -119,8 +119,12 @@ h6 {
   font-size: 14px;
 }
 
-ul,
 ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
